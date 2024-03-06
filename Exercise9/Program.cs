@@ -25,21 +25,19 @@
                 Console.WriteLine();
             }
 
-            int Rows = 4;
+            //asking for imput as in int for rows of asterisks, adding 1 to the asterisk in each row,
+            Console.WriteLine("enter the amount of rows you want as an int");
+            int Rows = int.Parse(Console.ReadLine());
             
-            for (int i = 1; i <= Rows ; i++)
+            //printing the amount of rows the user wanted + starting at one asterisk adding one asterisk every row printed
+            for (int i = 0; i <= Rows ; i++)
             {
-                for (int j = 1; j <= Rows ; j++)
+                for (int j = 0; j <= i ; j++)
                 {
-                    
-                    Console.Write("{0," Rows}, );
-                   
-               
-
+                    Console.Write("*");
                 }
                 Console.WriteLine();
             }
-            
             
 
         }
